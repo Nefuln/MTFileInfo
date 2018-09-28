@@ -51,7 +51,7 @@ extension MTMp3FileInfo {
     }
     
     /// 获取音乐文件基本信息（专辑名称、歌手、歌曲名称）
-    private func setBaseInfo() {
+    fileprivate func setBaseInfo() {
         if self.isMp3() == false {
             assertionFailure("该文件类型不是Mp3, 文件路径: \(self.filePath)")
             return
